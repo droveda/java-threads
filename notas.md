@@ -22,6 +22,23 @@ sincronizado.
   Uma thread daemon não impede a JVM de terminar desde que não existem mais threads principais em execução. 
   Um exemplo de uma thread daemon é o coletor de lixo da JVM (Garbage Collector) ou a nossa limpeza do banheiro :)
   * Para definir uma thread como daemon basta usar o método setDaemon(boolean) antes de inicializar
+* volatile (AtomicBoolean)
+  * faz com que o acesso seja feito diretamente na memória principal
+
+## Theads 1
+* java.lang.Thread
+  * start()
+  * sleep(...)
+* java.lang.Runnable
+  * run()
+* Object
+  * wait()
+  * notify()
+* synchronized
+
+
+## Threads 2
+* java.util.concurrent
 
 
 ## Estados de uma Thread
