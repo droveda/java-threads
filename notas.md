@@ -39,6 +39,11 @@ sincronizado.
 
 ## Threads 2
 * java.util.concurrent
+* ExecutorService - Pool de Threads
+  * CachedThreadPool
+  * FixedThreadPool
+* thread.join()
+* volatile e AtomicBoolean
 
 
 ## Estados de uma Thread
