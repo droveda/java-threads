@@ -44,6 +44,18 @@ sincronizado.
   * FixedThreadPool
 * thread.join()
 * volatile e AtomicBoolean
+* UncaughtExceptionHandler
+* ThreadFactory
+* interface Callable -> pode retornar um resultado (método call)
+  * deve-se utilizar (threadPool.submit(c2);) para executar o callable
+* interface Future
+* é possível utilizar a classe FutureTask caso precise que um resultado seja retornado pela tarefa 
+e o programador nao quer utilizar um pool de 
+threads. (FutureTask pode ser passado para uma Thread) exemplo:
+  * Callable<String> tarefa = new Tarefa(); //Tarefa implementa Callable
+    FutureTask<String> futureTask = new FutureTask<String>(tarefa);
+    new Thread(futureTask).start(); //usando Thread puro!!            
+    String resultado = futureTask.get(); 
 
 
 ## Estados de uma Thread

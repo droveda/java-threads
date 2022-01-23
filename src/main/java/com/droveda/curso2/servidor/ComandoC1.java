@@ -20,6 +20,7 @@ public class ComandoC1 implements Runnable {
             throw new RuntimeException(e);
         }
 
+        System.out.println("Finalizou comando c1");
         saida.println("Comando c1 executado com sucesso!");
     }
 }
