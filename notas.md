@@ -68,7 +68,7 @@ threads. (FutureTask pode ser passado para uma Thread) exemplo:
 * WAITING
   * A thread está esperando pois foi chamado this.wait().
 * TIMED_WAITING
-  * A thread está esperando pois foi chamado this.wait(milis)
+  * A thread está esperando pois foi chamado this.wait(milis) ou Thread.sleep(milis)
 * TERMINATED
   * A thread está finalizada.
 
